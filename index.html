@@ -40,9 +40,9 @@
         }
     </style>
     <script>
-        const request = async () => {
-            const response = await fetch('https://bitbay.net/API/Public/BTCPLN/orderbook.json');
-            const json = await response.json();
+        var request = async () => {
+            var response = await fetch('https://bitbay.net/API/Public/BTCPLN/orderbook.json');
+            var json = await response.json();
             console.log(json);
         }
 
