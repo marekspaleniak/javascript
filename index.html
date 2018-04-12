@@ -14,14 +14,14 @@
         }
 
         .center-block {
-            width: 50%!important;
+            width: 50% !important;
             margin: 0 auto;
         }
 
-        .vcenter {	  
+        .vcenter {
             padding-top: 30px;
             padding-bottom: 30px;
-	    }
+        }
 
         /* for id */
 
@@ -34,17 +34,19 @@
         }
 
         .btc {
-                width: 400px;
-                height:200px;
-                background: brown;
-            }
+            width: 400px;
+            height: 200px;
+            background: brown;
+        }
     </style>
     <script>
-        //comment in javascript in line
-        /* 
-        comment 
-        block 
-        */
+        const request = async () => {
+            const response = await fetch('https://bitbay.net/API/Public/BTCPLN/orderbook.json');
+            const json = await response.json();
+            console.log(json);
+        }
+
+        request();
     </script>
 </head>
 
